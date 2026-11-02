@@ -60,3 +60,13 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--faina-gold); ou
 .section-header__accent, .highlight span, .menu-full article > span { background-color: var(--faina-blue); color: var(--faina-blue); }
 .faina-separator { line-height: 0; overflow: hidden; position: relative; width: 100%; }.faina-separator img { display: block; height: auto; width: 100%; }.faina-separator--blue { background: var(--faina-blue); }.faina-separator--white { background: var(--faina-white); }
 @media (max-width: 720px) { .faina-separator img { height: 66px; object-fit: cover; width: 100%; }.hero { box-shadow: 0 0 0 100vmax var(--faina-blue); } }
+
+/* Alternância sequencial: branco e azul ao longo de toda a página. */
+.hero { background: var(--faina-white); box-shadow: none; clip-path: none; }.hero h1, .hero .hero-text { color: var(--faina-blue); }.hero .eyebrow { color: var(--faina-blue); }.hero .button--ink { background: var(--faina-blue); color: var(--faina-white); }.hero .text-link { color: var(--faina-blue); }
+.intro, .sea, .christmas, .gallery, .local-faq { background: var(--faina-blue); color: var(--faina-white); }
+.intro, .gallery, .local-faq { box-shadow: 0 0 0 100vmax var(--faina-blue); clip-path: inset(0 -100vmax); }
+.intro h2, .intro h3, .intro p, .gallery h2, .gallery p, .local-faq h2, .local-faq p, .local-faq button { color: var(--faina-white); }.intro .eyebrow, .gallery .eyebrow, .local-faq .eyebrow { color: var(--faina-gold); }.intro .highlight-grid, .intro .highlight, .local-faq .faq-list, .local-faq .faq-item { border-color: rgba(255,255,255,.3); }.intro .highlight span { color: var(--faina-gold); }
+.story, .menu-preview, .moments, .location { background: var(--faina-white); color: var(--faina-text); }
+.location { background: var(--faina-white); }.location h2, .location address { color: var(--faina-blue); }.location .eyebrow { color: var(--faina-blue); }.location .button--gold { background: var(--faina-blue); color: var(--faina-white); }.location .text-link--light { color: var(--faina-blue); }.location-links .button:hover { background: var(--faina-blue); }.location-links .text-link:hover { color: var(--faina-blue); }
+.faina-separator--blue { background: var(--faina-blue); }.faina-separator--white { background: var(--faina-white); }
+@media (max-width: 720px) { .hero { box-shadow: none; } }
