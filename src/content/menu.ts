@@ -1,10 +1,19 @@
 export type MenuItem = { category: string; name: string; description: string; price: string; featured: boolean; available: boolean };
 
+// Confirmar preços e disponibilidade com o restaurante antes de produção
 export const menuItems: MenuItem[] = [
-  { category: "Entradas", name: "Couvert da casa", description: "Seleção do dia para começar a viagem.", price: "—", featured: true, available: true },
-  { category: "Mariscos", name: "Marisco fresco", description: "Seleção sujeita à lota e à disponibilidade.", price: "—", featured: true, available: true },
-  { category: "Peixe", name: "Peixe do dia", description: "Grelhado, com o sabor do mar em primeiro plano.", price: "—", featured: true, available: true },
-  { category: "Carne", name: "Especialidade da casa", description: "Uma alternativa preparada com o mesmo cuidado.", price: "—", featured: false, available: true },
-  { category: "Vegan", name: "Opção vegetal", description: "Pergunte-nos pelas sugestões disponíveis.", price: "—", featured: false, available: true },
-  { category: "Sobremesas", name: "Doce final", description: "Para terminar a refeição com tempo.", price: "—", featured: false, available: true },
+  { category: "Entradas", name: "Croquetes de alheira com mostarda e mel", description: "", price: "—", featured: true, available: true },
+  { category: "Entradas", name: "Enguias fritas", description: "", price: "—", featured: true, available: true },
+  { category: "Entradas", name: "Salada de polvo", description: "", price: "—", featured: true, available: true },
+  { category: "Mariscos", name: "Amêijoas à pescador", description: "", price: "—", featured: true, available: true },
+  { category: "Mariscos", name: "Camarão da costa", description: "", price: "—", featured: true, available: true },
+  { category: "Mariscos", name: "Sapateira recheada", description: "", price: "—", featured: true, available: true },
+  { category: "Peixe e Mar", name: "Arroz de marisco com lagosta", description: "", price: "—", featured: true, available: true },
+  { category: "Peixe e Mar", name: "Arroz de tamboril com gambas", description: "", price: "—", featured: true, available: true },
+  { category: "Peixe e Mar", name: "Bacalhau à Faina", description: "", price: "—", featured: true, available: true },
+  { category: "Peixe e Mar", name: "Caldeirada de enguias", description: "", price: "—", featured: true, available: true },
+  { category: "Carnes", name: "Bife ao molho Madeira", description: "", price: "—", featured: false, available: true },
+  { category: "Carnes", name: "Picanha", description: "", price: "—", featured: false, available: true },
+  { category: "Sobremesas", name: "Cheesecake", description: "", price: "—", featured: false, available: true },
+  { category: "Sobremesas", name: "Pudim caseiro", description: "", price: "—", featured: false, available: true },
 ];
