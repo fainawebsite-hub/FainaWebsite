@@ -1,6 +1,7 @@
 export const images = {
   logo: "/images/brand/logo/faina-logo.png",
   tileRail: "/images/brand/patterns/faina-azulejo-strip.png",
+  separator: "/images/brand/patterns/separador140.png",
   hero: "/images/home/hero/hero-main.jpg",
   about: "/images/home/about/owners.jpg",
   categories: {

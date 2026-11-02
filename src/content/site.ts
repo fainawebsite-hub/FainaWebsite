@@ -8,9 +8,9 @@ export const copy = {
   pt: {
     locale: "pt-PT", nav: [["Início", "#inicio"], ["O restaurante", "#restaurante"], ["Ementa", "#ementa"], ["Galeria", "#galeria"], ["Natal", "#natal"], ["Contactos", "#contactos"]],
     reserve: "Reservar mesa", heroKicker: "Restaurante na Praia da Vagueira", heroTitle: "Sabores do mar,\ntradição à mesa",
-    heroText: "Cozinha portuguesa, peixe fresco do mercado, marisco e receitas que respeitam a tradição — a poucos passos do Atlântico.", viewMenu: "Ver ementa",
+    heroText: "Cozinha portuguesa, peixe fresco do mercado, marisco e receitas que respeitam a tradição, a poucos passos do Atlântico.", viewMenu: "Ver ementa",
     introTitle: "Cozinha portuguesa, com o mar por perto", introText: "Na Faina, a mesa nasce do ritmo da costa: produto de temporada, receitas portuguesas e uma forma simples de receber bem.",
-    storyTitle: "A nossa história", storyText: "A Faina começou como Faina Take Away, há cerca de sete anos, e cresceu entre o catering e o food truck. Em 2025, Sónia Neves e Armindo abriram as portas do restaurante na Praia da Vagueira — um espaço de cozinha portuguesa, encontros demorados e sabor a mar.", discover: "Conhecer a Faina",
+    storyTitle: "A nossa história", storyText: "A Faina começou como Faina Take Away, há cerca de sete anos, e cresceu entre o catering e o food truck. Em 2025, Sónia Neves e Armindo abriram as portas do restaurante na Praia da Vagueira, um espaço de cozinha portuguesa, encontros demorados e sabor a mar.", discover: "Conhecer a Faina",
     seaTitle: "Do mar para a mesa", seaText: "Uma seleção inspirada na costa e na tradição portuguesa, preparada todos os dias com respeito pelo produto.", menuTitle: "Ementa", menuText: "Receitas portuguesas, marisco e pratos de mar para descobrir ao ritmo da mesa.", fullMenu: "Ver ementa completa",
     christmasTitle: "Jantares de Natal na Faina", christmasText: "Para famílias, amigos e equipas: menus de grupo e uma mesa preparada para celebrar.", christmasCta: "Marcar jantar de Natal", talk: "Falar connosco",
     momentsTitle: "Momentos para partilhar", momentsText: "A Faina é para almoços demorados, jantares em família e celebrações que ficam na memória.", galleryTitle: "À mesa na Faina", locationTitle: "Encontre-nos na Vagueira", directions: "Como chegar", call: "Ligar",

@@ -53,3 +53,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--faina-gold); ou
 @media (min-width: 900px) and (max-width: 1199px) { .faina-tile-rail { width: 64px; }.brand-section--intro { padding-left: 88px; }.brand-section--sea .section-shell { padding-right: 88px; }.brand-section--location .location-inner { padding-left: 88px; } }
 @media (max-width: 899px) { .faina-tile-rail { display: none; }.brand-section--intro { padding-left: 0; }.brand-section--sea .section-shell, .brand-section--location .location-inner { padding-left: 0; padding-right: 0; }.seasonal-announcement { font-size: .63rem; min-height: 34px; top: 80px; }.hero { padding-top: 155px; }.gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }.local-faq { gap: 40px; grid-template-columns: 1fr; padding-block: 64px; } }
 @media (max-width: 560px) { .gallery-grid { grid-template-columns: 1fr; }.gallery-item { aspect-ratio: 4 / 3; }.seasonal-announcement { align-items: flex-start; flex-direction: column; gap: 3px; justify-content: center; padding-block: 5px; }.hero { padding-top: 170px; }.button, .mobile-action-bar a { min-height: 44px; } }
+
+/* A paleta reserva o amarelo para contrastes pontuais sobre azul. */
+.hero { background: var(--faina-blue); box-shadow: 0 0 0 100vmax var(--faina-blue); clip-path: inset(0 -100vmax); isolation: isolate; position: relative; }
+.hero h1, .hero .hero-text { color: var(--faina-white); }.hero .eyebrow { color: var(--faina-gold); }.hero .button--ink { background: var(--faina-white); color: var(--faina-blue); }.hero .text-link { color: var(--faina-white); }
+.section-header__accent, .highlight span, .menu-full article > span { background-color: var(--faina-blue); color: var(--faina-blue); }
+.faina-separator { line-height: 0; overflow: hidden; position: relative; width: 100%; }.faina-separator img { display: block; height: auto; width: 100%; }.faina-separator--blue { background: var(--faina-blue); }.faina-separator--white { background: var(--faina-white); }
+@media (max-width: 720px) { .faina-separator img { height: 66px; object-fit: cover; width: 100%; }.hero { box-shadow: 0 0 0 100vmax var(--faina-blue); } }
