@@ -39,3 +39,8 @@ export const menuCategories: MenuCategory[] = [
 ];
 
 export const menuItems: MenuItem[] = menuCategories.flatMap(({ title, items }) => items.map((entry) => ({ ...entry, category: title })));
+
+const fishCategory = menuCategories.find(({ id }) => id === "peixe");
+export const fishMenuHighlights = fishCategory
+  ? fishCategory.items.filter(({ name }) => ["Arroz de marisco com lagosta, 2 pessoas", "Bacalhau à Faina", "Cataplana de marisco, 2 pessoas"].includes(name.pt))
+  : [];
