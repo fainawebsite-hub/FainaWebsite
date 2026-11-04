@@ -84,3 +84,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--faina-gold); ou
 .brand-section--intro { padding-left: 0; }.brand-section--sea .section-shell { padding-right: 0; }.brand-section--location .location-inner { padding-left: 0; }
 @media (min-width: 1200px) { .faina-tile-rail { width: min(96px, max(0px, calc((100vw - 1200px) / 2))); }.faina-tile-rail--left { left: max(0px, calc((100vw - 1200px) / 2 - 96px)); }.faina-tile-rail--right { right: max(0px, calc((100vw - 1200px) / 2 - 96px)); } }
 @media (max-width: 1199px) { .faina-tile-rail { display: none; }.brand-section--intro, .brand-section--sea .section-shell, .brand-section--location .location-inner { padding-left: 0; padding-right: 0; } }
+
+/* Preços visíveis e alinhados na carta digital. */
+.menu-category li { align-items: baseline; display: flex; gap: 18px; justify-content: space-between; }.menu-category li strong { color: inherit; flex: 0 0 auto; font-family: var(--font-body), Arial, sans-serif; font-size: .84rem; font-weight: 800; letter-spacing: .04em; white-space: nowrap; }.menu-list__item { grid-template-columns: 100px minmax(0, 1fr) auto; }.menu-list__item em { align-self: center; color: var(--faina-blue); font-size: .78rem; font-style: normal; font-weight: 800; white-space: nowrap; }
+@media (max-width: 720px) { .menu-list__item { grid-template-columns: 72px minmax(0, 1fr) auto; }.menu-category li { gap: 12px; }.menu-category li strong { font-size: .76rem; } }
