@@ -15,10 +15,11 @@ export const business = {
   reservationUrl: "https://www.vagueirabairrodigital.pt/pt/loja/88526/restaurante-faina",
   instagram: "https://www.instagram.com/faina.restaurante/",
   facebook: "https://www.facebook.com/p/Faina-Restaurante-61573816637674/",
+  tiktok: "https://www.tiktok.com/@fainarestaurante",
   languages: ["pt-PT", "en-GB"],
   hours: [
     { day: { pt: "Segunda-feira", en: "Monday" }, hours: { pt: "Encerrado", en: "Closed" } },
-    { day: { pt: "Terça-feira", en: "Tuesday" }, hours: { pt: "09h–15h, 19h–22h", en: "09h–15h, 19h–22h" } },
+    { day: { pt: "Terça-feira", en: "Tuesday" }, hours: { pt: "11h30–15h, 19h–22h", en: "11h30–15h, 19h–22h" } },
     { day: { pt: "Quarta-feira", en: "Wednesday" }, hours: { pt: "11h30–15h, 19h–22h", en: "11h30–15h, 19h–22h" } },
     { day: { pt: "Quinta-feira", en: "Thursday" }, hours: { pt: "11h30–15h, 19h–22h", en: "11h30–15h, 19h–22h" } },
     { day: { pt: "Sexta-feira", en: "Friday" }, hours: { pt: "11h30–15h, 19h–22h", en: "11h30–15h, 19h–22h" } },
@@ -26,7 +27,7 @@ export const business = {
     { day: { pt: "Domingo", en: "Sunday" }, hours: { pt: "11h30–15h", en: "11h30–15h" } },
   ],
   openingHoursSpecification: [
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Tuesday", opens: "09:00", closes: "15:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Tuesday", opens: "11:30", closes: "15:00" },
     { "@type": "OpeningHoursSpecification", dayOfWeek: "Tuesday", opens: "19:00", closes: "22:00" },
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Wednesday", "Thursday", "Friday", "Saturday"], opens: "11:30", closes: "15:00" },
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Wednesday", "Thursday", "Friday", "Saturday"], opens: "19:00", closes: "22:00" },
