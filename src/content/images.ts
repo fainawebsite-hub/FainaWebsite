@@ -7,6 +7,7 @@ export const images = {
   },
   home: {
     hero: { large: "/images/pages/home/hero/hero-large.png", smallOne: "/images/pages/home/hero/hero-small-01.png", smallTwo: "/images/pages/home/hero/hero-small-02.png" },
+    heroBackground: "/images/pages/home/hero/Mediterranean Seafood Feast at Faina.png",
     categories: { fish: "/images/pages/home/categories/fresh-fish.jpg", seafood: "/images/pages/home/categories/shellfish.jpg", rice: "/images/pages/home/categories/rice-and-stews.jpg", specials: "/images/pages/home/categories/house-specialities.jpeg" },
     christmas: "/images/pages/home/christmas/christmas-dining.jpg",
     experience: "/images/pages/home/experience/restaurant-moments.jpg",
@@ -23,7 +24,7 @@ export const images = {
   logo: "/images/brand/logo/faina-logo.png",
   tileRail: "/images/brand/patterns/faina-azulejo-strip.png",
   separator: "/images/brand/patterns/separador140.png",
-  hero: "/images/pages/home/hero/hero-large.png",
+  hero: "/images/pages/home/hero/Mediterranean Seafood Feast at Faina.png",
   heroSmallOne: "/images/pages/home/hero/hero-small-01.png",
   heroSmallTwo: "/images/pages/home/hero/hero-small-02.png",
   about: "/images/pages/about/Owners.png",
