@@ -14,7 +14,9 @@ export function ReviewCarousel({ reviews, originalLanguage }: ReviewCarouselProp
   const dragStart = useRef<number | null>(null);
   const slides = reviews.length > 1 ? [...reviews, reviews[0]] : reviews;
   const move = (direction: -1 | 1) => {
-    if (direction === 1) setActive((current) => current + 1);
+    if (direction === 1) {
+      if (active < reviews.length) setActive((current) => current + 1);
+    }
     else if (active === 0) {
       setAnimated(false);
       setActive(reviews.length);
@@ -32,7 +34,7 @@ export function ReviewCarousel({ reviews, originalLanguage }: ReviewCarouselProp
 
   useEffect(() => {
     if (paused || reduced || reviews.length < 2) return;
-    const timer = window.setInterval(() => setActive((current) => (current + 1) % reviews.length), 7500);
+    const timer = window.setInterval(() => setActive((current) => current < reviews.length ? current + 1 : current), 7500);
     return () => window.clearInterval(timer);
   }, [paused, reduced, reviews.length]);
 
