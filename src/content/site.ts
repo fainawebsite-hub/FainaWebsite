@@ -13,7 +13,7 @@ export const copy = {
     storyTitle: "A nossa história", storyText: "A Faina nasceu de uma paixão pela cozinha portuguesa e pelo produto fresco. Ao longo dos anos, o projeto foi crescendo até encontrar na Praia da Vagueira a sua casa à mesa. Em 2025, Sónia Neves e Armindo abriram as portas do restaurante, um espaço de encontros demorados e sabor a mar.", discover: "Conhecer a Faina",
     seaTitle: "Do mar para a mesa", seaText: "Uma seleção inspirada na costa e na tradição portuguesa, preparada todos os dias com respeito pelo produto.", menuTitle: "Ementa", menuText: "Receitas portuguesas, marisco e pratos de mar para descobrir ao ritmo da mesa.", fullMenu: "Ver ementa completa",
     christmasTitle: "Jantares de Natal na Faina", christmasText: "Para famílias, amigos e equipas: menus de grupo e uma mesa preparada para celebrar.", christmasCta: "Marcar jantar de Natal", talk: "Falar connosco",
-    momentsTitle: "Momentos para partilhar", momentsText: "A Faina é para almoços demorados, jantares em família e celebrações que ficam na memória.", galleryTitle: "À mesa na Faina", locationTitle: "Encontre-nos na Vagueira", directions: "Como chegar", call: "Ligar",
+    momentsTitle: "Venha provar a Faina", momentsText: "Descubra peixe fresco, marisco e sabores portugueses preparados para uma refeição memorável junto à Praia da Vagueira.", galleryTitle: "À mesa na Faina", locationTitle: "Encontre-nos na Vagueira", directions: "Como chegar", call: "Ligar",
     footer: "Restaurante Faina na Praia da Vagueira, Vagos. Cozinha portuguesa, peixe fresco, marisco, arrozes, caldeiradas, carnes e alternativas vegetarianas.",
   },
   en: {
@@ -24,7 +24,7 @@ export const copy = {
     storyTitle: "Our Faina", storyText: "On Vagueira Beach, we welcome every table with the ease of people who know the sea well. Our cooking begins with the produce, respects tradition and makes room for long moments around the table.", discover: "Meet Faina",
     seaTitle: "From the sea to the table", seaText: "Fresh fish and selected shellfish, prepared with respect for the ingredient and tradition.", menuTitle: "Menu", menuText: "A small taste of what awaits. Our full menu is always ready for the table.", fullMenu: "See full menu",
     christmasTitle: "Christmas dinners at Faina", christmasText: "Bring family, friends or your team together for Christmas at Faina. Group menus and a welcoming setting made for sharing good times.", christmasCta: "Book your Christmas dinner", talk: "Talk to us",
-    momentsTitle: "Moments made for sharing", momentsText: "Good food, good wine and a table where there is always room for one more.", galleryTitle: "At the table at Faina", locationTitle: "Find us in Vagueira", directions: "Get directions", call: "Call",
+    momentsTitle: "Come and taste Faina", momentsText: "Discover fresh fish, shellfish and Portuguese flavours prepared for a memorable meal by Praia da Vagueira.", galleryTitle: "At the table at Faina", locationTitle: "Find us in Vagueira", directions: "Get directions", call: "Call",
     footer: "A restaurant on Vagueira Beach where flavours from the sea meet Portuguese culinary tradition.",
   },
 } as const;

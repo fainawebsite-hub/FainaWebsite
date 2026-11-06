@@ -5,9 +5,9 @@ import { SeasonalAnnouncement } from "@/components/SeasonalAnnouncement";
 import { SiteHeader } from "@/components/SiteHeader";
 import { copy, type Locale } from "@/content/site";
 
-type ContentPageProps = { locale: Locale; eyebrow: string; title: string; intro: string; children: ReactNode; heroImage?: { src: string; alt: string }; heroActions?: ReactNode };
+type ContentPageProps = { locale: Locale; eyebrow: string; title: string; intro: string; children: ReactNode; heroImage?: { src: string; alt: string }; heroActions?: ReactNode; heroClassName?: string };
 
-export function ContentPage({ locale, eyebrow, title, intro, children, heroImage, heroActions }: ContentPageProps) {
+export function ContentPage({ locale, eyebrow, title, intro, children, heroImage, heroActions, heroClassName }: ContentPageProps) {
   const t = copy[locale];
-  return <main className="content-page"><SiteHeader locale={locale} nav={t.nav} reserve={t.reserve} /><SeasonalAnnouncement locale={locale} /><PageHero eyebrow={eyebrow} title={title} intro={intro} actions={heroActions} image={heroImage} />{children}<Footer locale={locale} text={t.footer} /></main>;
+  return <main className="content-page"><SiteHeader locale={locale} nav={t.nav} reserve={t.reserve} /><SeasonalAnnouncement locale={locale} /><PageHero eyebrow={eyebrow} title={title} intro={intro} actions={heroActions} image={heroImage} className={heroClassName} />{children}<Footer locale={locale} text={t.footer} /></main>;
 }

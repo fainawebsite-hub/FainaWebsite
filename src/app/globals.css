@@ -157,6 +157,9 @@ h3 { line-height: 1; }
 .page-hero__content { min-width: 0; }
 .page-hero h1 { margin: 0 0 var(--space-lg); max-width: 920px; }
 .page-hero .lead { margin: 0; }
+.page-hero--about { padding-bottom: var(--space-xs); }
+.page-hero--about h1 { font-size: clamp(4.5rem, 6.1vw, 6rem); max-width: 820px; }
+.page-hero--about .lead { max-width: 600px; }
 .page-hero--split {
   align-items: start;
   display: grid;
@@ -198,6 +201,8 @@ h3 { line-height: 1; }
 .content-split h2 { margin-bottom: var(--space-md); }
 .content-split p { line-height: 1.62; margin-bottom: var(--space-md); max-width: 680px; }
 .content-split .button { margin-top: var(--space-sm); }
+.about-story { align-items: center; grid-template-columns: minmax(0, 1.04fr) minmax(0, .9fr); padding-bottom: var(--space-4xl); }
+.about-story h2 { font-size: clamp(3rem, 4.2vw, 4.5rem); max-width: 540px; }
 
 .group-options { padding-block: var(--space-xs) var(--space-3xl); }
 .group-options article { min-height: 0; padding: var(--space-lg); }
@@ -237,6 +242,7 @@ h3 { line-height: 1; }
   .lead { line-height: 1.55; }
   .page-hero { padding-block: 132px var(--space-sm); }
   .page-hero h1 { font-size: clamp(2.9rem, 13vw, 4rem); margin-bottom: var(--space-md); }
+  .page-hero--about h1 { font-size: clamp(3.1rem, 13.2vw, 4.15rem); }
   .page-hero--split { display: flex; flex-direction: column; gap: 36px; padding-bottom: var(--space-xl); }
   .page-hero__image { align-self: stretch; width: 100%; }
   .page-hero__image::after { inset: 10px -10px -10px 10px; }
@@ -254,4 +260,14 @@ h3 { line-height: 1; }
   .celebration-benefits { padding-block: 0 var(--space-2xl); }
   .menu-hero { padding-block: 132px var(--space-xl); }
   .menu-category { padding-block: var(--space-2xl); }
+}
+
+/* Convite à experiência: no mobile, conteúdo e fotografia permanecem próximos. */
+.moments { gap: clamp(var(--space-xl), 6vw, 80px); padding-block: var(--space-3xl); }
+.moments .lead { margin-bottom: var(--space-lg); }
+.moments .button { margin-top: 0; }
+@media (max-width: 720px) {
+  .moments { gap: var(--space-lg); padding-block: var(--space-2xl); }
+  .moments .lead { margin-bottom: var(--space-md); }
+  .moments .menu-reference { aspect-ratio: 4 / 5; height: auto; }
 }
