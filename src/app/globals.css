@@ -307,3 +307,35 @@ h3 { line-height: 1; }
   .page-hero--about .page-hero__image { min-height: 560px; width: auto; }
   .page-hero--about .page-hero__content { padding: 132px 28px 64px; }
 }
+
+/* Página O Restaurante: hero editorial full-bleed e assinatura de azulejo. */
+.page-hero--about.page-hero--split {
+  height: clamp(620px, 48vw, 700px);
+  margin-top: 140px;
+  min-height: 0;
+  width: 100%;
+}
+.page-hero--about .page-hero__image { min-height: 0; }
+.page-hero--about .page-hero__image img { object-position: center center; }
+.page-hero--about .page-hero__image::before { background: linear-gradient(180deg, rgba(0, 25, 55, .24), rgba(0, 25, 55, .42)); }
+.page-hero--about .page-hero__content { max-width: 900px; padding: 72px 48px 52px; }
+.page-hero--about h1 { font-size: clamp(4rem, 6vw, 6.5rem); line-height: .91; margin-bottom: 26px; max-width: 850px; text-wrap: balance; }
+.page-hero--about .lead { font-size: clamp(1.25rem, 1.7vw, 1.5rem); line-height: 1.45; max-width: 700px; }
+.faina-about-separator { background: var(--faina-white); height: clamp(100px, 9vw, 140px); line-height: 0; overflow: hidden; width: 100%; }
+.faina-about-separator img { display: block; height: 100%; object-fit: cover; object-position: center; width: 100%; }
+.page-hero--about + .faina-about-separator + .about-story { background: #fff; padding-top: clamp(100px, 9vw, 120px); }
+.about-story { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); }
+.about-story h2 { max-width: 600px; }
+
+@media (max-width: 899px) {
+  .page-hero--about.page-hero--split { height: 620px; margin-top: 136px; }
+}
+@media (max-width: 720px) {
+  .page-hero--about.page-hero--split { height: 540px; margin-top: 114px; min-height: 540px; }
+  .page-hero--about .page-hero__image { min-height: 540px; }
+  .page-hero--about .page-hero__content { padding: 72px 22px 42px; }
+  .page-hero--about h1 { font-size: clamp(2.75rem, 12.8vw, 4rem); line-height: .94; }
+  .page-hero--about .lead { font-size: clamp(1.06rem, 4.6vw, 1.18rem); line-height: 1.45; }
+  .faina-about-separator { height: clamp(58px, 17vw, 75px); }
+  .page-hero--about + .faina-about-separator + .about-story { padding-top: clamp(56px, 15vw, 72px); }
+}

@@ -6,7 +6,7 @@ type PageHeroProps = {
   title: string;
   intro: string;
   actions?: ReactNode;
-  image?: { src: string; alt: string };
+  image?: { src: string; alt: string; sizes?: string };
   className?: string;
 };
 
@@ -19,6 +19,6 @@ export function PageHero({ eyebrow, title, intro, actions, image, className }: P
       <p className="lead">{intro}</p>
       {actions && <div className="page-hero__actions">{actions}</div>}
     </div>
-    {image && <div className="page-hero__image"><Image src={image.src} alt={image.alt} fill priority sizes="(max-width: 720px) 100vw, 44vw" /></div>}
+    {image && <div className="page-hero__image"><Image src={image.src} alt={image.alt} fill priority sizes={image.sizes ?? "(max-width: 720px) 100vw, 44vw"} /></div>}
   </section>;
 }

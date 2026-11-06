@@ -5,7 +5,7 @@
 - `home/christmas`: imagem da secção de Natal da homepage.
 - `home/experience`: imagem da secção de convite à experiência.
 - `home/gallery`: galeria da homepage, por ordem (`gallery-01` a `gallery-25`).
-- `about`: `Faina Space dining room.png` é o hero vertical; `Owners.png` é a fotografia da história; `Faina Space Entrance.png` está disponível para uma futura secção do espaço.
+- `about`: `Faina Space Entrance.png` é o hero da página O Restaurante; `Owners.png` é a fotografia da história; `Faina Space dining room.png` fica disponível para uma futura secção sobre o espaço.
 - `groups`: fotografia do hero de Grupos.
 - `christmas`: fotografias exclusivas da página de Natal.
 - `contact` e `menu`: não usam fotografias locais atualmente.
