@@ -1,0 +1,10 @@
+import { ArrowUpRight, Mail } from "lucide-react";
+import { ContentPage } from "@/components/ContentPage";
+import { business } from "@/content/business";
+import type { Locale } from "@/content/site";
+
+export function GroupsPage({ locale }: { locale: Locale }) {
+  const pt = locale === "pt";
+  const blocks = pt ? ["Refeições de grupo", "Celebrações", "Jantares de empresa", "Épocas festivas", "Menus para grupos"] : ["Group meals", "Celebrations", "Company dinners", "Festive seasons", "Group menus"];
+  return <ContentPage locale={locale} eyebrow={pt ? "Faina para partilhar" : "Faina to share"} title={pt ? "Grupos e celebrações na Praia da Vagueira" : "Groups and celebrations in Praia da Vagueira"} intro={pt ? "Reúna a família, amigos ou equipa à mesa da Faina. Recebemos refeições de grupo e ocasiões especiais na Praia da Vagueira, Vagos." : "Bring family, friends or your team together at Faina. We welcome group meals and special occasions in Praia da Vagueira, Vagos."}><section className="group-options section-shell">{blocks.map((block, index) => <article key={block}><span>0{index + 1}</span><h2>{block}</h2><p>{pt ? "Fale connosco para confirmar disponibilidade, menu e condições para a sua ocasião." : "Contact us to confirm availability, menus and arrangements for your occasion."}</p></article>)}</section><section className="information-cta"><div className="section-shell"><p className="eyebrow eyebrow--gold">{pt ? "Planeie connosco" : "Plan with us"}</p><h2>{pt ? "Conte-nos a sua ideia" : "Tell us about your plans"}</h2><p>{pt ? "Informações sobre grupos sujeitas a confirmação com a equipa Faina." : "Group information is subject to confirmation with the Faina team."}</p><div><a className="button button--gold" href={`mailto:${business.email}`}><Mail />{pt ? "Pedir informações" : "Request information"}</a><a className="text-link text-link--light" href={business.reservationUrl} target="_blank" rel="noreferrer">{pt ? "Reservar mesa" : "Book a table"}<ArrowUpRight /></a></div></div></section></ContentPage>;
+}

@@ -5,9 +5,13 @@ import { useState } from "react";
 
 const items = [
   ["Onde fica o Restaurante Faina?", "A Faina fica no Largo Parracho Branco, na Praia da Vagueira, concelho de Vagos, distrito de Aveiro."],
-  ["É possível reservar mesa?", "Sim. Pode reservar online através do botão Reservar Mesa ou contactar a Faina pelo 234 794 060."],
+  ["Onde comer peixe fresco na Praia da Vagueira?", "A Faina serve peixe fresco do mercado, preparado de acordo com a disponibilidade diária."],
+  ["A Faina serve marisco?", "Sim. A ementa inclui marisco e pratos de mar, sujeitos à lota e disponibilidade."],
+  ["A Faina tem opções vegetarianas?", "Sim. A ementa inclui sugestões vegetarianas."],
+  ["É possível reservar para grupos?", "Sim. Contacte a Faina para confirmar disponibilidade e opções para grupos."],
   ["A Faina tem esplanada?", "Sim, o restaurante dispõe de esplanada."],
   ["Há estacionamento perto?", "Existe estacionamento de rua gratuito nas proximidades."],
+  ["Como posso reservar mesa?", "Pode reservar online através do botão Reservar Mesa ou contactar a Faina pelo 234 794 060."],
 ];
 
 export function LocalFaq() {

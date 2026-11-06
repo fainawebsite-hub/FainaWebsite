@@ -5,6 +5,7 @@ export const business = {
   phone: "+351234794060",
   displayPhone: "234 794 060",
   email: "restaurantefaina@gmail.com",
+  country: "Portugal",
   address: {
     streetAddress: "Largo Parracho Branco",
     addressLocality: "Praia da Vagueira",

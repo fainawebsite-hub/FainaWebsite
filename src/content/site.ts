@@ -6,18 +6,18 @@ export const restaurant = { ...business, locality: "Praia da Vagueira, Vagos, Av
 
 export const copy = {
   pt: {
-    locale: "pt-PT", nav: [["Início", "#inicio"], ["O restaurante", "#restaurante"], ["Ementa", "#ementa"], ["Galeria", "#galeria"], ["Natal", "#natal"], ["Contactos", "#contactos"]],
-    reserve: "Reservar mesa", heroKicker: "Restaurante na Praia da Vagueira", heroTitle: "Sabores do mar,\ntradição à mesa",
-    heroText: "Cozinha portuguesa, peixe fresco do mercado, marisco e receitas que respeitam a tradição, a poucos passos do Atlântico.", viewMenu: "Ver ementa",
-    introTitle: "Cozinha portuguesa, com o mar por perto", introText: "Na Faina, a mesa nasce do ritmo da costa: produto de temporada, receitas portuguesas e uma forma simples de receber bem.",
+    locale: "pt-PT", nav: [["Início", "#inicio"], ["O restaurante", "/sobre"], ["Ementa", "/ementa"], ["Grupos", "/grupos-eventos"], ["Galeria", "#galeria"], ["Natal", "/jantares-de-natal"], ["Contactos", "/contactos"]],
+    reserve: "Reservar mesa", heroKicker: "Restaurante português na Praia da Vagueira", heroTitle: "Sabores do mar,\ntradição à mesa",
+    heroText: "Cozinha portuguesa na Praia da Vagueira, com peixe fresco do mercado, marisco, arrozes, caldeiradas e sabores preparados para partilhar.", viewMenu: "Ver ementa",
+    introTitle: "Cozinha portuguesa na Praia da Vagueira", introText: "Na Faina, a cozinha começa no produto: peixe fresco, marisco e receitas portuguesas que celebram a ligação da Vagueira ao Atlântico.",
     storyTitle: "A nossa história", storyText: "A Faina começou como Faina Take Away, há cerca de sete anos, e cresceu entre o catering e o food truck. Em 2025, Sónia Neves e Armindo abriram as portas do restaurante na Praia da Vagueira, um espaço de cozinha portuguesa, encontros demorados e sabor a mar.", discover: "Conhecer a Faina",
     seaTitle: "Do mar para a mesa", seaText: "Uma seleção inspirada na costa e na tradição portuguesa, preparada todos os dias com respeito pelo produto.", menuTitle: "Ementa", menuText: "Receitas portuguesas, marisco e pratos de mar para descobrir ao ritmo da mesa.", fullMenu: "Ver ementa completa",
     christmasTitle: "Jantares de Natal na Faina", christmasText: "Para famílias, amigos e equipas: menus de grupo e uma mesa preparada para celebrar.", christmasCta: "Marcar jantar de Natal", talk: "Falar connosco",
     momentsTitle: "Momentos para partilhar", momentsText: "A Faina é para almoços demorados, jantares em família e celebrações que ficam na memória.", galleryTitle: "À mesa na Faina", locationTitle: "Encontre-nos na Vagueira", directions: "Como chegar", call: "Ligar",
-    footer: "Faina Restaurante · Praia da Vagueira · Cozinha portuguesa, peixe fresco e marisco.",
+    footer: "Restaurante Faina na Praia da Vagueira, Vagos. Cozinha portuguesa, peixe fresco, marisco, arrozes, caldeiradas, carnes e alternativas vegetarianas.",
   },
   en: {
-    locale: "en-GB", nav: [["Home", "#inicio"], ["The restaurant", "#restaurante"], ["Menu", "#ementa"], ["Gallery", "#galeria"], ["Christmas", "#natal"], ["Contact", "#contactos"]],
+    locale: "en-GB", nav: [["Home", "#inicio"], ["The restaurant", "/about"], ["Menu", "/menu"], ["Groups", "/groups-events"], ["Gallery", "#galeria"], ["Christmas", "/christmas-dinners"], ["Contact", "/contact"]],
     reserve: "Book a table", heroKicker: "a journey through flavours and tradition starts here", heroTitle: "Flavours from the sea\ntradition at the table",
     heroText: "At Faina, every dish tells a story. Portuguese cooking, fresh fish, shellfish and flavours that honour our connection to the sea.", viewMenu: "See the menu",
     introTitle: "Seafood cooking with soul", introText: "From our coast to your table. Fresh fish, shellfish and recipes that celebrate Portuguese cooking and the flavours of our region.",
