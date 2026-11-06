@@ -13,7 +13,7 @@ export const images = {
     gallery: ["/images/pages/home/gallery/gallery-01.png", "/images/pages/home/gallery/gallery-02.png", "/images/pages/home/gallery/gallery-03.png", "/images/pages/home/gallery/gallery-04.png", "/images/pages/home/gallery/gallery-05.jpg", "/images/pages/home/gallery/gallery-06.jpg", "/images/pages/home/gallery/gallery-07.jpg", "/images/pages/home/gallery/gallery-08.jpeg", "/images/pages/home/gallery/gallery-09.png", "/images/pages/home/gallery/gallery-10.jpg", "/images/pages/home/gallery/gallery-11.jpg", "/images/pages/home/gallery/gallery-12.jpg", "/images/pages/home/gallery/gallery-13.jpeg", "/images/pages/home/gallery/gallery-14.jpg", "/images/pages/home/gallery/gallery-15.jpg", "/images/pages/home/gallery/gallery-16.jpg", "/images/pages/home/gallery/gallery-17.jpg", "/images/pages/home/gallery/gallery-18.png", "/images/pages/home/gallery/gallery-19.jpg", "/images/pages/home/gallery/gallery-20.jpg", "/images/pages/home/gallery/gallery-21.png", "/images/pages/home/gallery/gallery-22.png", "/images/pages/home/gallery/gallery-23.png", "/images/pages/home/gallery/gallery-24.png", "/images/pages/home/gallery/gallery-25.png"],
   },
   aboutPage: {
-    hero: "/images/pages/about/Faina Space dining room.png",
+    hero: "/images/pages/about/Faina Space Entrance.png",
     owners: "/images/pages/about/Owners.png",
     entrance: "/images/pages/about/Faina Space Entrance.png",
   },
