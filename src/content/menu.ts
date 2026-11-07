@@ -33,7 +33,7 @@ export const menuCategories: MenuCategory[] = [
   { id: "infantil", title: text("Sugestão infantil", "Children’s Menu"), intro: text("Para os mais pequenos.", "For younger guests."), items: [
     item("Douradinhos de frango", "Chicken fingers", "11,50 €"), item("Ovo estrelado com batatas fritas", "Fried egg with fries", "7,00 €"),
   ] },
-  { id: "sobremesas", title: text("Sobremesas", "Desserts"), intro: text("Para terminar sem pressa.", "To finish without rushing."), items: [
+  { id: "sobremesas", title: text("Sobremesas", "Desserts"), intro: text("Para terminar a refeição.", "To finish your meal."), items: [
     item("Cheesecake", "Cheesecake", "5,50 €"), item("Pudim caseiro", "Homemade pudding", "4,50 €"), item("Mousse de chocolate", "Chocolate mousse", "4,50 €"), item("Natas do Céu", "Natas do Céu, Portuguese cream dessert", "5,00 €"), item("Molotof", "Molotof, Portuguese meringue pudding", "4,50 €"), item("Fruta do dia", "Fruit of the day", "4,50 €"), item("Baba de camelo", "Baba de Camelo, Portuguese caramel mousse", "4,50 €"), item("Sugestão da chef", "Chef’s dessert suggestion", "5,50 €"),
   ] },
 ];
