@@ -18,8 +18,8 @@ export const images = {
     owners: "/images/pages/about/Owners.png",
     entrance: "/images/pages/about/Faina Space Entrance.png",
   },
-  groups: { hero: "/images/pages/groups/groups-hero.jpg" },
-  christmasPage: { hero: "/images/pages/christmas/christmas-hero.jpg", table: "/images/pages/christmas/christmas-table.jpg" },
+  groups: { hero: "/images/pages/groups/groups-hero.png" },
+  christmasPage: { hero: "/images/pages/christmas/christmas-hero.jpg", poster: "/images/pages/christmas/Faina Christmas Dinner Poster.png", table: "/images/pages/christmas/christmas-table.jpg" },
   // Existing component aliases, all resolved to the organised page folders above.
   logo: "/images/brand/logo/faina-logo.png",
   tileRail: "/images/brand/patterns/faina-azulejo-strip.png",
