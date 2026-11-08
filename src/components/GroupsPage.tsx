@@ -10,15 +10,13 @@ export function GroupsPage({ locale }: { locale: Locale }) {
   const menuHref = pt ? "/pt/ementa" : "/en/menu";
   const blocks = pt ? [
     ["Para partilhar", "Refeições de grupo", "Almoços e jantares para reunir família, amigos ou associações à mesa."],
-    ["Momentos especiais", "Celebrações", "Aniversários, encontros familiares e outras ocasiões especiais na Praia da Vagueira."],
+    ["Momentos especiais", "Celebrações e datas especiais", "Aniversários, encontros familiares, Natal, Páscoa e outras ocasiões especiais para celebrar na Praia da Vagueira."],
     ["Para equipas", "Jantares de empresa", "Almoços, jantares e encontros profissionais para reunir a equipa à mesa."],
-    ["Datas especiais", "Épocas festivas", "Natal, Páscoa e outras celebrações com opções pensadas para grupos."],
     ["À sua medida", "Menus para grupos", "Fale connosco sobre as opções disponíveis e encontre a solução mais adequada para o seu grupo."],
   ] : [
     ["Made for sharing", "Group meals", "Lunches and dinners to bring family, friends or associations together at the table."],
-    ["Special moments", "Celebrations", "Birthdays, family gatherings and other special occasions in Praia da Vagueira."],
+    ["Special moments", "Celebrations and special dates", "Birthdays, family gatherings, Christmas, Easter and other special occasions to celebrate in Praia da Vagueira."],
     ["For teams", "Company dinners", "Lunches, dinners and professional gatherings to bring the team together."],
-    ["Special dates", "Festive seasons", "Christmas, Easter and other celebrations with options designed for groups."],
     ["Made for you", "Group menus", "Talk to us about available options and find the right solution for your group."],
   ];
   const copy = pt ? {

@@ -19,12 +19,9 @@ export function ChristmasPage({ locale }: { locale: Locale }) {
     editorialEyebrow: "Natal à mesa",
     editorialTitle: "O sabor do Natal na Praia da Vagueira",
     editorialText: ["Na Faina, o Natal celebra-se à mesa, com cozinha portuguesa, produto fresco e sabores ligados ao mar.", "Seja para um jantar de empresa, uma celebração entre amigos ou uma reunião em família, recebemos grupos na Praia da Vagueira para momentos pensados para partilhar.", "Fale connosco sobre a sua data, o número de pessoas e as opções disponíveis."],
-    quickEyebrow: "O seu grupo, a nossa mesa",
-    quickTitle: "A planear um jantar de Natal?",
-    quickText: "Diga-nos a data, o número de pessoas e o tipo de celebração. A equipa da Faina ajuda a encontrar a opção mais adequada para o seu grupo.",
     finalEyebrow: "Reserve com antecedência",
     finalTitle: "Fale connosco sobre o seu jantar de Natal",
-    finalText: "Para organizar o seu jantar de Natal na Faina, indique-nos a data pretendida, o número de pessoas e o tipo de celebração. A nossa equipa confirma consigo a disponibilidade e as opções para o grupo.",
+    finalText: "Indique-nos a data pretendida, o número de pessoas e o tipo de celebração. A equipa da Faina confirma consigo a disponibilidade e as opções para o grupo.",
     request: "Pedir informações", contact: "Contactar a Faina", contacts: "Ver contactos", reserve: "Reservar mesa",
   } : {
     heroEyebrow: "Christmas at Faina",
@@ -36,9 +33,6 @@ export function ChristmasPage({ locale }: { locale: Locale }) {
     editorialEyebrow: "Christmas at the table",
     editorialTitle: "The taste of Christmas in Praia da Vagueira",
     editorialText: ["At Faina, Christmas is celebrated around the table, with Portuguese cooking, fresh produce and flavours connected to the sea.", "Whether it is a company dinner, a celebration with friends or a family gathering, we welcome groups in Praia da Vagueira for occasions made for sharing.", "Talk to us about your date, number of guests and the available options."],
-    quickEyebrow: "Your group, our table",
-    quickTitle: "Planning a Christmas dinner?",
-    quickText: "Tell us the date, number of guests and type of celebration. The Faina team will help find the most suitable option for your group.",
     finalEyebrow: "Book ahead",
     finalTitle: "Talk to us about your Christmas dinner",
     finalText: "To organise your Christmas dinner at Faina, tell us your preferred date, number of guests and type of celebration. Our team will confirm availability and options for the group with you.",
@@ -61,7 +55,6 @@ export function ChristmasPage({ locale }: { locale: Locale }) {
       title={copy.heroTitle}
       intro={copy.heroText}
       heroClassName="page-hero--christmas"
-      heroImage={{ src: images.christmasPage.hero, alt: pt ? "Mesa do Restaurante Faina para jantares de Natal" : "Faina Restaurant table for Christmas dinners" }}
       heroActions={<><a className="button button--gold christmas-button-icon" href={"mailto:" + business.email}><Mail />{copy.request}</a><a className="text-link christmas-link-icon" href={business.reservationUrl} target="_blank" rel="noreferrer">{copy.reserve}</a></>}
     >
       <div className="christmas-page">
@@ -72,10 +65,6 @@ export function ChristmasPage({ locale }: { locale: Locale }) {
         <section className="christmas-editorial section-shell">
           <div className="christmas-editorial__copy"><p className="eyebrow">{copy.editorialEyebrow}</p><h2>{copy.editorialTitle}</h2>{copy.editorialText.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<div className="christmas-editorial__actions"><a className="button button--gold christmas-button-icon" href={"mailto:" + business.email}><Mail />{copy.request}</a><Link className="text-link" href={contactHref}>{copy.contacts}</Link></div></div>
           <div className="christmas-editorial__poster"><Image src={images.christmasPage.poster} alt={pt ? "Poster dos jantares de Natal do Restaurante Faina" : "Faina Restaurant Christmas dinner poster"} width={1024} height={1536} sizes="(max-width: 720px) calc(100vw - 48px), 42vw" /></div>
-        </section>
-        <section className="christmas-quick-cta section-shell">
-          <div><p className="eyebrow">{copy.quickEyebrow}</p><h2>{copy.quickTitle}</h2><p>{copy.quickText}</p></div>
-          <div className="christmas-quick-cta__actions"><a className="button button--ink christmas-button-icon" href={"mailto:" + business.email}><Mail />{copy.contact}</a><a className="text-link christmas-link-icon" href={"tel:" + business.phone}><Phone />{business.displayPhone}</a><Link className="text-link" href={contactHref}>{copy.contacts}</Link></div>
         </section>
         <section className="information-cta christmas-final-cta"><div className="section-shell"><p className="eyebrow eyebrow--gold">{copy.finalEyebrow}</p><h2>{copy.finalTitle}</h2><p>{copy.finalText}</p><div><a className="button button--gold christmas-button-icon" href={"mailto:" + business.email}><Mail />{copy.contact}</a><a className="text-link text-link--light christmas-link-icon" href={"tel:" + business.phone}><Phone />{business.displayPhone}</a><a className="text-link text-link--light" href={business.reservationUrl} target="_blank" rel="noreferrer">{copy.reserve}</a></div></div></section>
       </div>
