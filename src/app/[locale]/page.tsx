@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowDownRight, ArrowUpRight, MapPin, Phone } from "lucide-react";
 import { Footer } from "@/components/Footer";
 import { GalleryCarousel } from "@/components/GalleryCarousel";
+import { HomeScrollReset } from "@/components/HomeScrollReset";
 import { Reveal } from "@/components/Reveal";
 import { ReviewsSection } from "@/components/reviews/ReviewsSection";
 import { SeasonalAnnouncement } from "@/components/SeasonalAnnouncement";
@@ -44,6 +45,7 @@ export default async function LocaleHome({ params }: { params: Promise<{ locale:
   const jsonLd = { "@context": "https://schema.org", "@type": "Restaurant", name: business.name, url: business.url, logo: `${business.url}${images.logo}`, telephone: business.phone, email: business.email, address: { "@type": "PostalAddress", ...business.address }, servesCuisine: ["Portuguese", "Seafood", "Fish"], acceptsReservations: true, menu: `${business.url}/pt/ementa`, sameAs: [business.instagram, business.facebook, business.tiktok], image: `${business.url}${images.hero}`, openingHoursSpecification: business.openingHoursSpecification };
 
   return <main id="inicio">
+    <HomeScrollReset />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <SiteHeader locale={locale} nav={t.nav} reserve={t.reserve} />
     <SeasonalAnnouncement locale={locale} />

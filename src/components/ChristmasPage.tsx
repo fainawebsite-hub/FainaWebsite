@@ -49,7 +49,7 @@ export function ChristmasPage({ locale }: { locale: Locale }) {
       heroImage={{
         src: images.christmasPage.poster,
         alt: pt ? "Poster dos jantares de Natal do Restaurante Faina" : "Faina Restaurant Christmas dinner poster",
-        sizes: "(max-width: 720px) min(100vw - 48px, 330px), 360px",
+        sizes: "(max-width: 720px) min(100vw - 40px, 360px), (max-width: 920px) 420px, 480px",
       }}
       heroActions={<><a className="button button--gold christmas-button-icon" href={"mailto:" + business.email}><Mail />{copy.request}</a><a className="text-link christmas-link-icon" href={business.reservationUrl} target="_blank" rel="noreferrer">{copy.reserve}</a></>}
     >
