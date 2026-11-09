@@ -84,6 +84,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--faina-gold); ou
 .menu-cta > .section-shell > p:not(.eyebrow) { margin-inline: auto; }
 .menu-cta .button { margin-right: 12px; }
 .menu-cta .text-link { margin-left: 12px; }
+.menu-cta { background-image: url("/images/pages/home/Sections%20Backgrounds/RESERVE%20O%20SEU%20LUGAR%E2%80%9D%20na%20Ementa.png"); background-position: center center; background-repeat: no-repeat; background-size: cover; }
 
 @media (max-width: 720px) {
   .menu-cta .button { margin-right: 0; }
