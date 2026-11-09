@@ -166,7 +166,7 @@ h3 { line-height: 1; }
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   min-height: 680px;
-  overflow: hidden;
+  overflow: visible;
   padding: 0;
   position: relative;
 }
@@ -564,4 +564,36 @@ h3 { line-height: 1; }
   .christmas-final-cta { padding-block: 64px; }
   .christmas-final-cta h2 { font-size: clamp(2.55rem, 11vw, 3.65rem); }
   .christmas-final-cta > div > div { align-items: flex-start; flex-direction: column; gap: 18px; }
+}
+
+/* Mantém os acentos portugueses totalmente visíveis nos títulos de hero. */
+.page-hero h1 {
+  line-height: 1.12;
+  overflow: visible;
+  padding-block: .05em;
+}
+.page-hero h1 span { overflow: visible; }
+
+@media (max-width: 720px) {
+  .page-hero h1 { line-height: 1.13; }
+}
+
+/* Arte decorativa da prova social: o centro fica livre para a leitura. */
+.reviews-section {
+  background-color: #fff;
+  background-image: url("/images/pages/home/Sections%20Backgrounds/Seafood%20Review%20Section.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 1024px) {
+  .reviews-section { background-size: auto 100%; }
+}
+
+@media (max-width: 768px) {
+  .reviews-section {
+    background-color: #fff;
+    background-image: none;
+  }
 }
