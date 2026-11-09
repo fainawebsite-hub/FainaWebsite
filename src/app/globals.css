@@ -75,10 +75,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--faina-gold); ou
 /* Ementa digital: categorias rápidas, disponibilidade e leitura confortável. */
 .menu-hero { padding-bottom: 46px; }.menu-service { color: var(--faina-blue); font-size: .74rem; font-weight: 800; letter-spacing: .14em; margin: 32px 0 0; text-transform: uppercase; }
 .menu-nav { background: var(--faina-blue); position: sticky; top: 78px; z-index: 20; }.menu-nav > div { display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }.menu-nav a { border-bottom: 2px solid transparent; color: var(--faina-white); flex: 0 0 auto; font-size: .67rem; font-weight: 800; letter-spacing: .11em; padding: 17px 18px 15px; text-transform: uppercase; }.menu-nav a:hover, .menu-nav a:focus-visible { border-color: var(--faina-gold); color: var(--faina-gold); outline: 0; }
-.menu-availability { align-items: center; border-bottom: 1px solid var(--faina-border); display: flex; gap: 30px; justify-content: space-between; padding-block: 27px; }.menu-availability p { line-height: 1.55; margin: 0; max-width: 720px; }.menu-availability .text-link { flex: 0 0 auto; }
-.menu-category { padding-block: 84px; }.menu-category:nth-child(odd) { background: var(--faina-blue); color: var(--faina-white); }.menu-category__inner { display: grid; gap: clamp(42px, 8vw, 120px); grid-template-columns: minmax(250px, .72fr) minmax(0, 1.28fr); }.menu-category header { display: flex; gap: 22px; }.menu-category header > span { color: var(--faina-blue); font-family: var(--font-display), sans-serif; font-size: 1.25rem; line-height: 1; }.menu-category h2 { margin-bottom: 12px; }.menu-category header p:not(.eyebrow) { line-height: 1.6; margin-bottom: 14px; }.menu-category header small { color: #55708c; display: block; font-size: .78rem; line-height: 1.5; }.menu-category ul { border-top: 1px solid var(--faina-border); columns: 2; list-style: none; margin: 0; padding: 0; }.menu-category li { break-inside: avoid; border-bottom: 1px solid var(--faina-border); color: var(--faina-blue); font-family: var(--font-display), sans-serif; font-size: clamp(1.25rem, 2vw, 1.75rem); line-height: 1.05; padding: 17px 4px; text-transform: uppercase; }.menu-category:nth-child(odd) .eyebrow, .menu-category:nth-child(odd) header > span { color: var(--faina-gold); }.menu-category:nth-child(odd) h2, .menu-category:nth-child(odd) header p:not(.eyebrow), .menu-category:nth-child(odd) li { color: var(--faina-white); }.menu-category:nth-child(odd) header small { color: rgba(255,255,255,.72); }.menu-category:nth-child(odd) ul, .menu-category:nth-child(odd) li { border-color: rgba(255,255,255,.26); }
+.menu-availability { align-items: center; border-bottom: 1px solid var(--faina-border); display: flex; flex-direction: column; gap: 22px; justify-content: center; padding-block: 27px; text-align: center; }.menu-availability p { line-height: 1.55; margin: 0 auto; max-width: 720px; }
+.menu-category { padding-block: 84px; }.menu-category:nth-child(odd) { background: var(--faina-blue); color: var(--faina-white); }.menu-category__inner { align-items: center; display: grid; gap: clamp(42px, 8vw, 120px); grid-template-columns: minmax(250px, .72fr) minmax(0, 1.28fr); }.menu-category header { display: flex; gap: 22px; }.menu-category header > span { color: var(--faina-blue); font-family: var(--font-display), sans-serif; font-size: 1.25rem; line-height: 1; }.menu-category h2 { margin-bottom: 12px; }.menu-category header p:not(.eyebrow) { line-height: 1.6; margin-bottom: 14px; }.menu-category header small { color: #55708c; display: block; font-size: .78rem; line-height: 1.5; }.menu-category ul { border-top: 1px solid var(--faina-border); columns: 2; list-style: none; margin: 0; padding: 0; }.menu-category li { break-inside: avoid; border-bottom: 1px solid var(--faina-border); color: var(--faina-blue); font-family: var(--font-display), sans-serif; font-size: clamp(1.25rem, 2vw, 1.75rem); line-height: 1.05; padding: 17px 4px; text-transform: uppercase; }.menu-category:nth-child(odd) .eyebrow, .menu-category:nth-child(odd) header > span { color: var(--faina-gold); }.menu-category:nth-child(odd) h2, .menu-category:nth-child(odd) header p:not(.eyebrow), .menu-category:nth-child(odd) li { color: var(--faina-white); }.menu-category:nth-child(odd) header small { color: rgba(255,255,255,.72); }.menu-category:nth-child(odd) ul, .menu-category:nth-child(odd) li { border-color: rgba(255,255,255,.26); }
 .menu-cta p:not(.eyebrow) { color: var(--faina-white); line-height: 1.6; margin-bottom: 26px; }.menu-cta .button { margin-right: 22px; }
-@media (max-width: 720px) { .menu-nav { top: 80px; }.menu-nav a { padding-inline: 14px; }.menu-availability { align-items: flex-start; flex-direction: column; gap: 17px; }.menu-category { padding-block: 62px; }.menu-category__inner { grid-template-columns: 1fr; }.menu-category ul { columns: 1; }.menu-category li { font-size: 1.35rem; }.menu-cta .button { margin-bottom: 20px; } }
+@media (max-width: 720px) { .menu-nav { top: 80px; }.menu-nav a { padding-inline: 14px; }.menu-availability { align-items: center; gap: 17px; }.menu-category { padding-block: 62px; }.menu-category__inner { grid-template-columns: 1fr; }.menu-category ul { columns: 1; }.menu-category li { font-size: 1.35rem; }.menu-cta .button { margin-bottom: 20px; } }
 
 /* Uma única grelha de 1200px mantém todas as secções no mesmo eixo. */
 .site-header { padding-inline: max(24px, calc((100vw - 1200px) / 2)); }.site-footer { background: var(--faina-white); color: var(--faina-text); padding-inline: max(24px, calc((100vw - 1200px) / 2)); }.footer-top h3 { color: var(--faina-blue); }.footer-top a { color: var(--faina-text); }.footer-top a:hover, .footer-bottom a:hover { color: var(--faina-blue); }.socials a { border-color: rgba(6,44,90,.35); color: var(--faina-blue); }.footer-bottom { border-color: var(--faina-border); color: #56687f; }
@@ -403,6 +403,14 @@ h3 { line-height: 1; }
 .home-experience__photo--team { grid-column: 2; grid-row: 2; }
 
 .home-dishes { background: var(--faina-blue); color: var(--faina-white); overflow: hidden; padding-block: clamp(96px, 10vw, 128px); }
+@media (min-width: 769px) {
+  .home-dishes {
+    background-image: url("/images/pages/home/Sections%20Backgrounds/ESCOLHIDOS%20DA%20NOSSA%20MESA%20section.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .home-dishes__intro { max-width: 760px; }
 .home-dishes h2 { color: var(--faina-white); font-size: clamp(3.1rem, 5.3vw, 5.8rem); margin-bottom: 0; }
 .home-dishes__grid { align-items: stretch; display: grid; gap: clamp(14px, 2vw, 26px); grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 54px; }
@@ -418,7 +426,8 @@ h3 { line-height: 1; }
 .home-dish:hover img { transform: scale(1.045); }
 .home-dish:hover .home-dish__shade { background: linear-gradient(180deg, rgba(2, 27, 56, .08) 32%, rgba(2, 27, 56, .86)); }
 .home-dish:hover .home-dish__label { transform: translateY(-6px); }
-.home-dishes__cta { display: flex; justify-content: flex-end; margin-top: 42px; }
+.home-dishes__cta { display: flex; justify-content: center; margin-top: 42px; }
+.home-dishes__cta .button--gold { background: #ffcc53; color: #002c5d; }
 
 .home-story { align-items: center; display: grid; gap: clamp(48px, 9vw, 130px); grid-template-columns: minmax(0, 1fr) minmax(0, .82fr); padding-block: clamp(96px, 10vw, 128px); }
 .home-story__image { aspect-ratio: 4 / 5; overflow: hidden; position: relative; }
@@ -462,7 +471,7 @@ h3 { line-height: 1; }
   .home-dish > a { aspect-ratio: 4 / 4.65; }
   .home-dish__label { bottom: 21px; left: 20px; right: 20px; }
   .home-dish__label strong { font-size: 2.55rem; }
-  .home-dishes__cta { justify-content: flex-start; margin-top: 30px; }
+  .home-dishes__cta { justify-content: center; margin-top: 30px; }
   .home-story { display: flex; flex-direction: column; gap: 34px; padding-block: 68px; }
   .home-story__image { align-self: stretch; aspect-ratio: 4 / 5; width: 100%; }
   .home-story h2 { font-size: clamp(2.7rem, 11.5vw, 3.7rem); margin-bottom: 22px; }
@@ -691,7 +700,7 @@ h3 { line-height: 1; }
 
 /* A arte marítima acompanha a secção final de localização da homepage. */
 .home-location {
-  background-image: url("/images/pages/home/Sections%20Backgrounds/Contact%20Seafood%20Sections%20%281920%20x%20650%20px%29.png");
+  background-image: url("/images/pages/home/Sections%20Backgrounds/Encontre-nos%20na%20Vagueiracontactos.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
