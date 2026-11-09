@@ -600,28 +600,8 @@ h3 { line-height: 1; }
 
 /* Contactos: hierarquia compacta e ações úteis junto à informação. */
 .page-hero--contact {
-  align-items: center;
-  display: flex;
-  isolation: isolate;
-  min-height: 650px;
-  padding-block: 72px;
-  position: relative;
+  padding-bottom: 0;
 }
-.page-hero--contact::before {
-  background-image: url("/images/pages/home/Sections%20Backgrounds/Contact%20Seafood%20Sections%20%281920%20x%20650%20px%29.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  content: "";
-  inset: 0;
-  left: 50%;
-  pointer-events: none;
-  position: absolute;
-  transform: translateX(-50%);
-  width: 100vw;
-  z-index: 0;
-}
-.page-hero--contact .page-hero__content { position: relative; z-index: 1; }
 .page-hero--contact .eyebrow { margin-bottom: 14px; }
 .page-hero--contact h1 {
   font-size: clamp(3.5rem, 5vw, 4.875rem);
@@ -679,15 +659,25 @@ h3 { line-height: 1; }
 .contact-page iframe { height: clamp(440px, 38vw, 500px); min-height: 440px; }
 
 @media (max-width: 768px) {
-  .page-hero--contact {
-    display: block;
-    min-height: 0;
-    padding: 132px 0 0;
-  }
-  .page-hero--contact::before { display: none; }
+  .page-hero--contact { padding-bottom: 0; }
   .page-hero--contact h1 { font-size: clamp(3rem, 12.8vw, 4.1rem); line-height: 1.04; }
   .page-hero--contact + .contact-page { gap: 38px; padding-block: 44px 72px; }
   .contact-page__actions { align-items: stretch; flex-direction: column; }
   .contact-page__actions .button { width: 100%; }
   .contact-page iframe { height: 320px; min-height: 0; }
+}
+
+/* A arte marítima acompanha a secção final de localização da homepage. */
+.home-location {
+  background-image: url("/images/pages/home/Sections%20Backgrounds/Contact%20Seafood%20Sections%20%281920%20x%20650%20px%29.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 768px) {
+  .home-location {
+    background-color: #fff;
+    background-image: none;
+  }
 }
