@@ -408,7 +408,7 @@ h3 { line-height: 1; }
     background-image: url("/images/pages/home/Sections%20Backgrounds/ESCOLHIDOS%20DA%20NOSSA%20MESA%20section.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1920px 900px;
   }
 }
 .home-dishes__intro { max-width: 760px; }
@@ -609,7 +609,7 @@ h3 { line-height: 1; }
   background-image: url("/images/pages/home/Sections%20Backgrounds/Seafood%20Review%20Section.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 1920px 650px;
 }
 
 @media (max-width: 1024px) {
