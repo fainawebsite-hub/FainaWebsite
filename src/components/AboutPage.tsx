@@ -10,7 +10,7 @@ export function AboutPage({ locale }: { locale: Locale }) {
   const story = pt
     ? {
         eyebrow: "A Faina",
-        title: "Da Vagueira para a mesa",
+        title: "Entre o mar e a tradição",
         first: "A Faina começou há vários anos com uma ligação simples à cozinha portuguesa e ao produto fresco. Com o tempo, o projeto cresceu, passou pelo catering e por uma food truck e encontrou na Praia da Vagueira o lugar para dar um novo passo.",
         second: "Hoje, Sónia Neves e Armindo recebem à mesa uma cozinha marcada pelo mar, com peixe fresco, marisco, caldeiradas e sabores portugueses preparados com respeito pelo produto.",
         third: "Uma história que continua a crescer na Vagueira, sempre com a frescura e o sabor no centro de cada prato.",

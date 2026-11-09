@@ -15,9 +15,6 @@ export const menuCategories: MenuCategory[] = [
   { id: "sopas", title: text("Sopas", "Soups"), intro: text("Sabores simples, feitos todos os dias.", "Simple flavours, prepared every day."), items: [
     item("Sopa de legumes", "Vegetable soup", "3,00 €"), item("Sopa de peixe", "Fish soup", "5,50 €"),
   ] },
-  { id: "extras", title: text("Extras", "Sides"), intro: text("Acompanhamentos para completar o prato.", "Sides to complete your dish."), items: [
-    item("Extra de arroz", "Extra rice", "3,00 €"), item("Extra de batata frita", "Extra fries", "3,00 €"), item("Extra de migas", "Migas, traditional Portuguese bread crumbs", "4,50 €"), item("Extra de legumes", "Extra vegetables", "4,50 €"), item("Extra de batata a murro", "Smashed roast potatoes", "4,50 €"), item("Extra de salada", "Extra salad", "4,00 €"), item("Extra de ovo", "Extra egg", "1,50 €"),
-  ] },
   { id: "mariscos", title: text("Mariscos", "Shellfish"), intro: text("Seleção da costa para partilhar.", "A selection from the coast, made for sharing."), availability: text("Sujeito à lota e disponibilidade diária.", "Subject to the daily catch and availability."), items: [
     item("Amêijoas à pescador, dose", "Fisherman-style clams, portion", "18,00 €", true), item("Camarão da costa, dose", "Coastal prawns, portion", "19,50 €", true), item("Camarão tigre grelhado, kg", "Grilled tiger prawns, per kg", "100,00 €", true), item("Sapateira recheada, unidade", "Stuffed crab, whole", "35,00 €", true), item("Gambas ao alho", "Garlic prawns", "18,00 €"), item("Travessa de mariscos", "Seafood platter", "110,00 €"),
   ] },
@@ -32,6 +29,9 @@ export const menuCategories: MenuCategory[] = [
   ] },
   { id: "infantil", title: text("Sugestão infantil", "Children’s Menu"), intro: text("Para os mais pequenos.", "For younger guests."), items: [
     item("Douradinhos de frango", "Chicken fingers", "11,50 €"), item("Ovo estrelado com batatas fritas", "Fried egg with fries", "7,00 €"),
+  ] },
+  { id: "extras", title: text("Extras", "Sides"), intro: text("Acompanhamentos para completar o prato.", "Sides to complete your dish."), items: [
+    item("Extra de arroz", "Extra rice", "3,00 €"), item("Extra de batata frita", "Extra fries", "3,00 €"), item("Extra de migas", "Migas, traditional Portuguese bread crumbs", "4,50 €"), item("Extra de legumes", "Extra vegetables", "4,50 €"), item("Extra de batata a murro", "Smashed roast potatoes", "4,50 €"), item("Extra de salada", "Extra salad", "4,00 €"), item("Extra de ovo", "Extra egg", "1,50 €"),
   ] },
   { id: "sobremesas", title: text("Sobremesas", "Desserts"), intro: text("Para terminar a refeição.", "To finish your meal."), items: [
     item("Cheesecake", "Cheesecake", "5,50 €"), item("Pudim caseiro", "Homemade pudding", "4,50 €"), item("Mousse de chocolate", "Chocolate mousse", "4,50 €"), item("Natas do Céu", "Natas do Céu, Portuguese cream dessert", "5,00 €"), item("Molotof", "Molotof, Portuguese meringue pudding", "4,50 €"), item("Fruta do dia", "Fruit of the day", "4,50 €"), item("Baba de camelo", "Baba de Camelo, Portuguese caramel mousse", "4,50 €"), item("Sugestão da chef", "Chef’s dessert suggestion", "5,50 €"),
