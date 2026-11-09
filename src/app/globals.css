@@ -602,6 +602,10 @@ h3 { line-height: 1; }
 .page-hero--contact {
   padding-bottom: 0;
 }
+.page-hero--contact .page-hero__content {
+  margin-inline: auto;
+  text-align: center;
+}
 .page-hero--contact .eyebrow { margin-bottom: 14px; }
 .page-hero--contact h1 {
   font-size: clamp(3.5rem, 5vw, 4.875rem);
@@ -611,6 +615,8 @@ h3 { line-height: 1; }
   overflow: visible;
   padding-block: .05em;
 }
+.page-hero--contact h1,
+.page-hero--contact .lead { margin-inline: auto; }
 .page-hero--contact .lead { max-width: 650px; }
 .page-hero--contact + .contact-page {
   align-items: start;
@@ -679,5 +685,21 @@ h3 { line-height: 1; }
   .home-location {
     background-color: #fff;
     background-image: none;
+  }
+}
+
+/* CTA final de Natal: conteúdo e ações centrados como um único convite. */
+.christmas-final-cta > .section-shell { text-align: center; }
+.christmas-final-cta h2,
+.christmas-final-cta p:not(.eyebrow) { margin-inline: auto; }
+.christmas-final-cta > .section-shell > div {
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .christmas-final-cta > .section-shell > div {
+    align-items: center;
+    justify-content: center;
   }
 }
