@@ -499,6 +499,14 @@ h3 { line-height: 1; }
 .groups-page .group-options article > p:not(.group-options__eyebrow) { color: rgba(255,255,255,.86); line-height: 1.65; margin: 0; max-width: 560px; }
 .groups-page .group-option--featured .button { margin-top: 28px; }
 .groups-final-cta { padding-block: clamp(76px, 8vw, 96px); }
+@media (min-width: 769px) {
+  .groups-final-cta {
+    background-image: url("/images/pages/home/Sections%20Backgrounds/_VAMOS%20PREPARAR%20A%20SUA%20MESA%20section%20.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .groups-final-cta > div > div { gap: 24px 30px; }
 .groups-contact-link { gap: 10px; }
 @media (max-width: 720px) {
@@ -541,6 +549,14 @@ h3 { line-height: 1; }
 .christmas-benefits__grid h3 { color: #fff; font-size: clamp(1.75rem, 2.4vw, 2.3rem); line-height: 1; margin: 0 0 14px; }
 .christmas-benefits__grid article > p:last-child { color: rgba(255,255,255,.88); line-height: 1.6; margin: 0; }
 .christmas-final-cta { background: #002c5d; padding-block: 80px; }
+@media (min-width: 769px) {
+  .christmas-final-cta {
+    background-image: url("/images/pages/home/Sections%20Backgrounds/Reserve%20section%20.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .christmas-final-cta h2 { font-size: clamp(3rem, 4.6vw, 4.5rem); line-height: .99; max-width: 13ch; }
 .christmas-final-cta > div > div { gap: 24px 30px; }
 @media (max-width: 920px) {
