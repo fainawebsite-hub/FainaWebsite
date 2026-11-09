@@ -10,14 +10,29 @@ export function GalleryCarousel({ images, alt }: GalleryCarouselProps) {
   const viewport = useRef<HTMLDivElement>(null);
   const firstSlide = useRef<HTMLElement>(null);
   const duplicateStart = useRef<HTMLElement>(null);
+  const manualPauseTimer = useRef<number | undefined>(undefined);
   const [paused, setPaused] = useState(false);
   const [reduced, setReduced] = useState(false);
   const galleryImages = images.length > 1 ? [...images, ...images] : images;
+
+  const pauseForManualNavigation = () => {
+    window.clearTimeout(manualPauseTimer.current);
+    setPaused(true);
+    manualPauseTimer.current = window.setTimeout(() => setPaused(false), 700);
+  };
+
   const move = (direction: -1 | 1) => {
     const element = viewport.current;
     if (!element) return;
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    element.scrollBy({ left: direction * element.clientWidth * 0.78, behavior: reduced ? "auto" : "smooth" });
+    const loopDistance = (duplicateStart.current?.offsetLeft ?? 0) - (firstSlide.current?.offsetLeft ?? 0);
+    const slideWidth = firstSlide.current?.getBoundingClientRect().width ?? element.clientWidth * 0.78;
+    const track = firstSlide.current?.parentElement;
+    const gap = track ? Number.parseFloat(window.getComputedStyle(track).gap) || 0 : 0;
+    const step = slideWidth + gap;
+
+    if (direction === -1 && element.scrollLeft - step < 0 && loopDistance > 0) element.scrollLeft += loopDistance;
+
+    element.scrollBy({ left: direction * step, behavior: reduced ? "auto" : "smooth" });
   };
 
   useEffect(() => {
@@ -41,7 +56,28 @@ export function GalleryCarousel({ images, alt }: GalleryCarouselProps) {
     return () => window.clearInterval(timer);
   }, [images.length, paused, reduced]);
 
-  return <div className="gallery-carousel" aria-label={alt} onFocusCapture={() => setPaused(true)} onBlurCapture={() => setPaused(false)}>
+  useEffect(() => {
+    const element = viewport.current;
+    if (!element) return;
+    let settleTimer: number | undefined;
+    const normaliseLoop = () => {
+      const loopDistance = (duplicateStart.current?.offsetLeft ?? 0) - (firstSlide.current?.offsetLeft ?? 0);
+      if (loopDistance > 0 && element.scrollLeft >= loopDistance) element.scrollLeft -= loopDistance;
+    };
+    const handleScroll = () => {
+      window.clearTimeout(settleTimer);
+      settleTimer = window.setTimeout(normaliseLoop, 120);
+    };
+    element.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.clearTimeout(settleTimer);
+      element.removeEventListener("scroll", handleScroll);
+    };
+  }, [images.length]);
+
+  useEffect(() => () => window.clearTimeout(manualPauseTimer.current), []);
+
+  return <div className="gallery-carousel" aria-label={alt}>
     <div ref={viewport} className="gallery-carousel__viewport" tabIndex={0} aria-label={alt} onPointerDown={() => setPaused(true)} onPointerUp={() => setPaused(false)} onPointerCancel={() => setPaused(false)}>
       <div className="gallery-carousel__track">
         {galleryImages.map((src, index) => {
@@ -50,6 +86,6 @@ export function GalleryCarousel({ images, alt }: GalleryCarouselProps) {
         })}
       </div>
     </div>
-    <div className="gallery-carousel__controls" aria-label="Navegação da galeria"><button type="button" onClick={() => move(-1)} aria-label="Ver fotografias anteriores"><ArrowLeft /></button><button type="button" onClick={() => move(1)} aria-label="Ver mais fotografias"><ArrowRight /></button></div>
+    <div className="gallery-carousel__controls" aria-label="Navegação da galeria"><button type="button" onClick={() => { pauseForManualNavigation(); move(-1); }} aria-label="Ver fotografias anteriores"><ArrowLeft /></button><button type="button" onClick={() => { pauseForManualNavigation(); move(1); }} aria-label="Ver mais fotografias"><ArrowRight /></button></div>
   </div>;
 }
