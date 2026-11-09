@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { Fragment, type ReactNode } from "react";
 import Image from "next/image";
 
 type PageHeroProps = {
@@ -15,7 +15,7 @@ export function PageHero({ eyebrow, title, intro, actions, image, className }: P
   return <section className={`page-hero section-shell${image ? " page-hero--split" : ""}${className ? ` ${className}` : ""}`}>
     <div className="page-hero__content">
       <p className="eyebrow">{eyebrow}</p>
-      <h1>{title}</h1>
+      <h1>{title.split("\n").map((line, index, lines) => <Fragment key={`${line}-${index}`}>{line}{index < lines.length - 1 && <br />}</Fragment>)}</h1>
       <p className="lead">{intro}</p>
       {actions && <div className="page-hero__actions">{actions}</div>}
     </div>

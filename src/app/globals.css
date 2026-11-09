@@ -594,9 +594,100 @@ h3 { line-height: 1; }
 @media (max-width: 768px) {
   .reviews-section {
     background-color: #fff;
-    background-image: url("/images/pages/home/Sections%20Backgrounds/Mobile%20Seafood%20Sections%20%281080%20x%201600%20px%29.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-image: none;
   }
+}
+
+/* Contactos: hierarquia compacta e ações úteis junto à informação. */
+.page-hero--contact {
+  align-items: center;
+  display: flex;
+  isolation: isolate;
+  min-height: 650px;
+  padding-block: 72px;
+  position: relative;
+}
+.page-hero--contact::before {
+  background-image: url("/images/pages/home/Sections%20Backgrounds/Contact%20Seafood%20Sections%20%281920%20x%20650%20px%29.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+  inset: 0;
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100vw;
+  z-index: 0;
+}
+.page-hero--contact .page-hero__content { position: relative; z-index: 1; }
+.page-hero--contact .eyebrow { margin-bottom: 14px; }
+.page-hero--contact h1 {
+  font-size: clamp(3.5rem, 5vw, 4.875rem);
+  line-height: 1.01;
+  margin-bottom: 26px;
+  max-width: 740px;
+  overflow: visible;
+  padding-block: .05em;
+}
+.page-hero--contact .lead { max-width: 650px; }
+.page-hero--contact + .contact-page {
+  align-items: start;
+  gap: clamp(56px, 5vw, 72px);
+  grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+  padding-block: clamp(44px, 4vw, 56px) clamp(64px, 6vw, 80px);
+}
+.contact-page__details h2 {
+  font-size: clamp(1.75rem, 2.4vw, 2.375rem);
+  line-height: 1;
+  margin: 0;
+}
+.contact-details__groups {
+  display: grid;
+  gap: 26px;
+  margin-top: 24px;
+}
+.contact-page .contact-details__group {
+  font-size: 1rem;
+  line-height: 1.58;
+  margin: 0;
+}
+.contact-page .contact-details__group a { color: var(--faina-blue); }
+.contact-page .contact-details__group a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.contact-page .contact-details__group ul { margin: 0; }
+.contact-page .contact-details__group { list-style: none; padding: 0; }
+.contact-page__actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+.contact-page__actions .button {
+  gap: 9px;
+  min-height: 50px;
+  padding-inline: 22px;
+}
+.contact-page__actions .button--gold { background: #ffcc53; color: #002c5d; }
+.contact-page__actions .button--gold:hover { background: #f4bf42; color: #002c5d; }
+.contact-page__actions .button--ink { background: #002c5d; color: #fff; }
+.contact-page__actions .button--ink:hover { background: #063b77; color: #fff; }
+.contact-page__actions .button--outline { border-color: #002c5d; color: #002c5d; }
+.contact-page__actions .button--outline:hover { background: rgba(0,44,93,.06); color: #002c5d; }
+.contact-page__actions svg { flex: 0 0 auto; }
+.contact-page iframe { height: clamp(440px, 38vw, 500px); min-height: 440px; }
+
+@media (max-width: 768px) {
+  .page-hero--contact {
+    display: block;
+    min-height: 0;
+    padding: 132px 0 0;
+  }
+  .page-hero--contact::before { display: none; }
+  .page-hero--contact h1 { font-size: clamp(3rem, 12.8vw, 4.1rem); line-height: 1.04; }
+  .page-hero--contact + .contact-page { gap: 38px; padding-block: 44px 72px; }
+  .contact-page__actions { align-items: stretch; flex-direction: column; }
+  .contact-page__actions .button { width: 100%; }
+  .contact-page iframe { height: 320px; min-height: 0; }
 }
