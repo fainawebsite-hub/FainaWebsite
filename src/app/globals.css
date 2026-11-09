@@ -620,7 +620,7 @@ h3 { line-height: 1; }
 /* Arte decorativa da prova social: o centro fica livre para a leitura. */
 .reviews-section {
   background-color: #fff;
-  background-image: url("/images/pages/home/Sections%20Backgrounds/Seafood%20Review%20Section.png");
+  background-image: url("/images/pages/home/Sections%20Backgrounds/Seafood%20Sections.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -633,7 +633,10 @@ h3 { line-height: 1; }
 @media (max-width: 768px) {
   .reviews-section {
     background-color: #fff;
-    background-image: none;
+    background-image: url("/images/pages/home/Sections%20Backgrounds/Mobile%20Seafood%20Sections%20%281080%20x%201600%20px%29.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 }
 
