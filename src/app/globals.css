@@ -456,7 +456,7 @@ h3 { line-height: 1; }
 .home-gallery .gallery-carousel { margin-top: 40px; }
 .home-location { padding-block: clamp(64px, 6vw, 80px); }
 .home-location .location-inner { align-items: center; gap: 48px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-.home-location h2 { font-size: clamp(2.7rem, 4.55vw, 4.75rem); line-height: .99; overflow: visible; padding-block: .04em; }
+.home-location h2 { font-size: clamp(2.7rem, 4.55vw, 4.75rem); line-height: .99; overflow: visible; padding-block: .04em; text-align: center; }
 .home-location .location-links { align-items: center; gap: 16px; margin-top: 30px; }
 .home-location .location-action--reserve { background: #ffcc53; color: #002c5d; }
 .home-location .location-action--reserve:hover { background: #f4bf42; color: #002c5d; }
