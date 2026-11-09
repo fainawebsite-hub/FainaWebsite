@@ -76,7 +76,24 @@ export default async function LocaleHome({ params }: { params: Promise<{ locale:
     <section id="galeria" className="gallery home-gallery" aria-labelledby="gallery-title"><div className="section-shell"><Reveal><p className="eyebrow eyebrow--light">{pt ? "Vagueira à mesa" : "Vagueira at the table"}</p><h2 id="gallery-title">{t.galleryTitle}</h2></Reveal></div><GalleryCarousel images={galleryPhotos} alt={photoAlt} /></section>
     <ReviewsSection locale={locale} />
 
-    <section id="contactos" className="location home-location" aria-labelledby="location-title"><div className="section-shell location-inner"><Reveal><p className="eyebrow">Praia da Vagueira</p><h2 id="location-title">{pt ? "Encontre-nos na Vagueira." : "Find us in Vagueira."}</h2><address>{business.name}<br />{business.address.streetAddress}<br />{business.address.addressLocality}, {business.address.addressRegion}<br />{business.country}</address><div className="opening-hours"><h3>{pt ? "Horário" : "Opening hours"}</h3><dl>{business.hours.map((entry) => <div key={entry.day.pt}><dt>{entry.day[locale]}</dt><dd>{entry.hours[locale]}</dd></div>)}</dl></div><div className="location-links"><a className="button button--gold location-action--reserve" href={business.reservationUrl} target="_blank" rel="noreferrer">{t.reserve}</a><a className="button location-action--directions" href="https://www.google.com/maps/search/?api=1&query=Faina+Restaurante+Praia+da+Vagueira" target="_blank" rel="noreferrer"><MapPin />{t.directions}</a><a className="location-action--phone" href={`tel:${business.phone}`}><Phone />{t.call} {business.displayPhone}</a></div></Reveal><iframe title="Mapa para Faina Restaurante na Praia da Vagueira" src="https://www.google.com/maps?q=Faina+Restaurante+Praia+da+Vagueira&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" /></div></section>
+    <section id="contactos" className="location home-location" aria-labelledby="location-title">
+      <div className="section-shell location-inner">
+        <Reveal>
+          <p className="eyebrow">Praia da Vagueira</p>
+          <h2 id="location-title">{pt ? "Encontre-nos na Vagueira." : "Find us in Vagueira."}</h2>
+          <address>{business.name}<br />{business.address.streetAddress}<br />{business.address.addressLocality}, {business.address.addressRegion}<br />{business.country}</address>
+          <div className="opening-hours"><h3>{pt ? "Horário" : "Opening hours"}</h3><dl>{business.hours.map((entry) => <div key={entry.day.pt}><dt>{entry.day[locale]}</dt><dd>{entry.hours[locale]}</dd></div>)}</dl></div>
+        </Reveal>
+        <div className="home-location__map-column">
+          <iframe title="Mapa para Faina Restaurante na Praia da Vagueira" src="https://www.google.com/maps?q=Faina+Restaurante+Praia+da+Vagueira&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+          <div className="location-links">
+            <a className="button button--gold location-action--reserve" href={business.reservationUrl} target="_blank" rel="noreferrer">{t.reserve}</a>
+            <a className="button location-action--directions" href="https://www.google.com/maps/search/?api=1&query=Faina+Restaurante+Praia+da+Vagueira" target="_blank" rel="noreferrer"><MapPin />{t.directions}</a>
+            <a className="location-action--phone" href={`tel:${business.phone}`}><Phone />{t.call} {business.displayPhone}</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <Footer locale={locale} text={t.footer} />
     <div className="mobile-action-bar"><a href={`tel:${business.phone}`}><Phone />{t.call}</a><a href={business.reservationUrl} target="_blank" rel="noreferrer">{t.reserve}<ArrowUpRight /></a></div>
   </main>;
