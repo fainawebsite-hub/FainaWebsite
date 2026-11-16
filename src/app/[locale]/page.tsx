@@ -10,6 +10,7 @@ import { SeasonalAnnouncement } from "@/components/SeasonalAnnouncement";
 import { SiteHeader } from "@/components/SiteHeader";
 import { business } from "@/content/business";
 import { images } from "@/content/images";
+import { metadataUrl, socialMetadata, socialPreview } from "@/content/metadata";
 import { copy, type Locale } from "@/content/site";
 
 export function generateStaticParams() { return [{ locale: "pt" }, { locale: "en" }]; }
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const isPt = locale !== "en";
   const title = isPt ? "Faina Restaurante | Peixe Fresco e Marisco na Praia da Vagueira" : "Faina Restaurant | Fresh Fish & Seafood in Praia da Vagueira";
   const description = isPt ? "Restaurante Faina na Praia da Vagueira, Vagos. Cozinha portuguesa, peixe fresco do mercado, marisco, caldeiradas e reservas online." : "Faina Restaurant in Praia da Vagueira, Vagos. Portuguese cooking, fresh market fish, seafood, stews and online reservations.";
-  return { title, description, alternates: { canonical: `/${locale}`, languages: { "pt-PT": "/pt", "en-GB": "/en", "x-default": "/pt" } }, openGraph: { title, description, type: "website", locale: isPt ? "pt_PT" : "en_GB", images: [images.hero] }, twitter: { card: "summary_large_image", title, description } };
+  return { title, description, alternates: { canonical: `/${locale}`, languages: { "pt-PT": "/pt", "en-GB": "/en", "x-default": "/pt" } }, openGraph: { title, description, type: "website", url: metadataUrl(`/${locale}`), siteName: socialMetadata.siteName, locale: isPt ? "pt_PT" : "en_GB", images: [socialPreview] }, twitter: { card: "summary_large_image", title, description, images: [socialPreview] } };
 }
 
 export default async function LocaleHome({ params }: { params: Promise<{ locale: string }> }) {
