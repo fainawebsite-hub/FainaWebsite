@@ -1,7 +1,9 @@
+import { siteUrl } from "@/content/metadata";
+
 // Confirmar horário final com Sónia antes do lançamento
 export const business = {
   name: "Faina Restaurante",
-  url: "https://www.fainarestaurante.pt",
+  url: siteUrl,
   phone: "+351234794060",
   displayPhone: "234 794 060",
   email: "restaurantefaina@gmail.com",

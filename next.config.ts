@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images: { formats: ["image/avif", "image/webp"] },
+  output: "export",
+  images: {
+    // Cloudflare Pages serves exported assets directly, while existing Image
+    // components retain their layout and responsive behaviour.
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

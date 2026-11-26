@@ -12,6 +12,9 @@
   "author": "",
   "license": "UNLICENSED",
   "private": true,
+  "engines": {
+    "node": ">=22 <23"
+  },
   "dependencies": {
     "framer-motion": "^14.9.0",
     "lucide-react": "^1.66.0",

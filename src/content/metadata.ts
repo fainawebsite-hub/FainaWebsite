@@ -1,6 +1,10 @@
-const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://fainawebsite.vercel.app";
+const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim().replace(/\/$/, "");
 
-export const metadataBase = new URL(configuredSiteUrl);
+// Cloudflare Pages sets this variable at build time. The local fallback keeps
+// local builds valid without publishing an accidental production canonical.
+export const siteUrl = configuredSiteUrl || "http://localhost:3000";
+
+export const metadataBase = new URL(siteUrl);
 
 export const socialPreview = {
   url: new URL("/images/Faina%20Link%20Preview.png", metadataBase).toString(),
